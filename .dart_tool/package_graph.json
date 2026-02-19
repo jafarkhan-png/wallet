@@ -13,6 +13,15 @@
       "devDependencies": []
     },
     {
+      "name": "shelf_router",
+      "version": "1.1.4",
+      "dependencies": [
+        "http_methods",
+        "meta",
+        "shelf"
+      ]
+    },
+    {
       "name": "shelf",
       "version": "1.4.2",
       "dependencies": [
@@ -25,40 +34,14 @@
       ]
     },
     {
-      "name": "shelf_router",
-      "version": "1.1.4",
-      "dependencies": [
-        "http_methods",
-        "meta",
-        "shelf"
-      ]
+      "name": "meta",
+      "version": "1.18.1",
+      "dependencies": []
     },
     {
       "name": "http_methods",
       "version": "1.1.1",
       "dependencies": []
-    },
-    {
-      "name": "http_parser",
-      "version": "4.1.2",
-      "dependencies": [
-        "collection",
-        "source_span",
-        "string_scanner",
-        "typed_data"
-      ]
-    },
-    {
-      "name": "collection",
-      "version": "1.19.1",
-      "dependencies": []
-    },
-    {
-      "name": "typed_data",
-      "version": "1.4.0",
-      "dependencies": [
-        "collection"
-      ]
     },
     {
       "name": "stream_channel",
@@ -80,6 +63,36 @@
       "dependencies": []
     },
     {
+      "name": "http_parser",
+      "version": "4.1.2",
+      "dependencies": [
+        "collection",
+        "source_span",
+        "string_scanner",
+        "typed_data"
+      ]
+    },
+    {
+      "name": "collection",
+      "version": "1.19.1",
+      "dependencies": []
+    },
+    {
+      "name": "async",
+      "version": "2.13.0",
+      "dependencies": [
+        "collection",
+        "meta"
+      ]
+    },
+    {
+      "name": "typed_data",
+      "version": "1.4.0",
+      "dependencies": [
+        "collection"
+      ]
+    },
+    {
       "name": "string_scanner",
       "version": "1.4.1",
       "dependencies": [
@@ -98,19 +111,6 @@
     {
       "name": "term_glyph",
       "version": "1.2.2",
-      "dependencies": []
-    },
-    {
-      "name": "async",
-      "version": "2.13.0",
-      "dependencies": [
-        "collection",
-        "meta"
-      ]
-    },
-    {
-      "name": "meta",
-      "version": "1.18.1",
       "dependencies": []
     }
   ],

@@ -1,13 +1,12 @@
 FROM dart:stable AS build
 WORKDIR /app
-COPY . .
+COPY pubspec.* ./
 RUN dart pub get
-RUN dart compile exe main.dart -o bin/server
+COPY . .
+RUN mkdir -p bin && dart compile exe main.dart -o bin/server
 
-FROM debian:stable-slim
-WORKDIR /app
-COPY --from=build /runtime/ /runtime/
+FROM scratch
+COPY --from=build /runtime/ /
 COPY --from=build /app/bin/server /app/server
-ENV PATH="/runtime/bin:${PATH}"
 EXPOSE 8080
 CMD ["/app/server"]
