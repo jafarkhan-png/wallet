@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: wallet-dart-api
+    env: docker
+    plan: free
+    dockerContext: .
+    dockerfilePath: Dockerfile
